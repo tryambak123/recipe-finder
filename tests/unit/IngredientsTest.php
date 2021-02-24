@@ -1,10 +1,15 @@
 <?php
+/**
+* This class has test cases to test the data in fridge.csv
+* Author : Tryambak
+*/
 use PHPUnit\Framework\TestCase;
 class IngredientsTest extends TestCase
 {
 	public function testFailure(): void
     {
-		$path = '../../data/fridge.csv';
+		define('PATH', dirname(dirname(__DIR__)));
+		$path = PATH.'/data/fridge.csv';
 		$this->assertFileExists($path);
 		
 		if (($handle = fopen($path, "r")) !== FALSE) {
