@@ -14,6 +14,13 @@ On opening the above URL in browser a form opens and it asks to upload 2 files. 
 
 # Test
 For unit testing we have PHPUnit. We can check the ingredient and recipe file for it's validity as well as the logic to find the recipe.
+To run the test we run the test on console.
+
+# Steps to run the Test
+1.open cmoomand prompt
+2. cd to recipe-finder
+3. Run command vendor/bin/phpunit --verbose tests/unit/RecipesTest.php - It will display the test result
+4. Same commad for running Ingredients test also : vendor/bin/phpunit --verbose tests/unit/IngredientsTest.php
 
 ## Assumptions (edge cases)
 - If there is a recipe with no ingredients we ignore it

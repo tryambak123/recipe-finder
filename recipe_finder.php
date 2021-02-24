@@ -1,4 +1,8 @@
 <?php 
+/**
+* We send post request from form to this file and validate the file and it's content here, then call methods to find recipes
+* Author : Tryambak
+*/
 include "FileValidator.php";
 include "Finder.php";
 
